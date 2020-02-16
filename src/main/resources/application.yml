@@ -1,0 +1,19 @@
+#logging:
+#  pattern:
+#    console: "%d - %msg%n"
+##    直接生成日志文件
+#  file: ./logs/sell.log
+##  设置日志级别 debug以上的级别都会被控制台输出
+#  level:
+#    root: debug
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 123456
+    url: jdbc:mysql://192.168.3.9/sell?serverTimezone=GMT%2B8&characterEncoding=utf-8&useSSL=false
+  jpa:
+    show-sql: true
+server:
+  servlet:
+    context-path: /sell
